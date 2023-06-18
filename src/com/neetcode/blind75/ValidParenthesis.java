@@ -10,48 +10,42 @@ public class ValidParenthesis {
         for (int i = 0; i < str.length(); i++) {
             char a = str.charAt(i);
             switch (a) {
-                case '(':
-                case '[':
-                case '{': {
+                case '(', '[', '{' -> {
                     st.push(a);
-                    break;
                 }
-                case ')': {
+                case ')' -> {
                     if (!st.empty()) {
                         char x = st.pop();
                         if (x != '(') {
                             System.out.println("Not a valid string");
                             return;
                         }
-                        break;
-                    }else {
+                    } else {
                         System.out.println("Not a valid string");
                         return;
                     }
 
                 }
-                case ']': {
+                case ']' -> {
                     if (!st.empty()) {
                         char x = st.pop();
                         if (x != '[') {
                             System.out.println("not a valid string");
                             return;
                         }
-                        break;
-                    }else{
+                    } else {
                         System.out.println("not a valid string");
                         return;
                     }
                 }
-                case '}': {
+                case '}' -> {
                     if (!st.empty()) {
                         char x = st.pop();
                         if (x != '{') {
                             System.out.println("not A valid string");
                             return;
                         }
-                        break;
-                    }else{
+                    } else {
                         System.out.println("not A valid string");
                         return;
                     }
