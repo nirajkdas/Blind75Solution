@@ -1,7 +1,5 @@
 package com.neetcode.blind75;
 
-import com.sun.source.tree.Tree;
-
 public class InvertBinaryTree {
     static class TreeNode {
         int val;
@@ -38,7 +36,7 @@ public class InvertBinaryTree {
     }
 
     private static TreeNode invertTree(TreeNode root) {
-        if(root == null)
+        if (root == null)
             return root;
 
         root.left = invertTree(root.left);
@@ -51,8 +49,8 @@ public class InvertBinaryTree {
         return root;
     }
 
-    private static void printTree(TreeNode root){
-        if(root == null)
+    private static void printTree(TreeNode root) {
+        if (root == null)
             return;
         printTree(root.left);
         System.out.println(root.val);
