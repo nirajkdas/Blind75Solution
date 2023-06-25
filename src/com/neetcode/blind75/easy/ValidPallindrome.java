@@ -1,4 +1,4 @@
-package com.neetcode.blind75;
+package com.neetcode.blind75.easy;
 
 public class ValidPallindrome {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.neetcode.blind75;
+package com.neetcode.blind75.easy;
 
 import java.util.HashMap;
 
