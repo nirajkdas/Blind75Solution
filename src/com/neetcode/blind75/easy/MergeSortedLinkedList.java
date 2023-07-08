@@ -1,22 +1,8 @@
 package com.neetcode.blind75.easy;
 
+import com.neetcode.blind75.medium.ListNode;
+
 public class MergeSortedLinkedList {
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
 
     private static void printNode(ListNode head) {
         System.out.println("Printing the nodes....");
