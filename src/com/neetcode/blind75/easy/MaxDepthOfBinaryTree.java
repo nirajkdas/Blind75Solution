@@ -1,25 +1,6 @@
 package com.neetcode.blind75.easy;
-
+import com.neetcode.blind75.medium.TreeNode;
 public class MaxDepthOfBinaryTree {
-
-    static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
 
     public static void main(String[] args) {
         TreeNode root = new TreeNode(4);
